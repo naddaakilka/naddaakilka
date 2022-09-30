@@ -4,13 +4,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Akilka's Portfolio</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quibusdam
-      iusto dolores sint voluptates quaerat provident maiores a numquam rerum
-      doloremque omnis et quae laborum fugit molestiae, harum fugiat eius.
-    </p>
+    <!-- Header START -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <img
+              href="#home"
+              src="dist/img/personal-logo-black.png"
+              alt="logo"
+              class="w-1/3 py-3"
+            />
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav id="nav-menu" class="hidden">
+              <ul>
+                <li>
+                  <a href="#home">Home</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header END -->
+    <!-- Hero Section START -->
+    <section id="home" class="pt-36">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/4 md:w-1/2">
+            <div class="mt-10">
+              <img
+                src="dist/img/me-cropped.jpg"
+                alt="Akilka"
+                class="mx-auto border-8 rounded-full lg:w-1/2"
+              />
+            </div>
+          </div>
+          <div class="w-full self-end px-4 lg:w-3/4 md:w-1/2">
+            <h1 class="block font-bold text-dark text-4xl">Nadda Akilka</h1>
+            <h2 class="font-semibold text-primary mb-5">
+              Newbie Programmer | An Aspiring Game Dev | Life Traveller
+            </h2>
+            <p class="font-small text-slate-400 leading-relaxed">
+              Graduated with Bachelor's degree in Information System student
+              focused on Data Analytics. Majored in Multimedia in high school.
+              Willing to learn new things, dedicated to striving for the better,
+              will work hard to finish tasks at hand, able to work in a team,
+              and is confident in the ability to adapt to any kind of
+              circumstance, even when being faced with an entirely new and
+              foreign situation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section END -->
+
+    <script src="dist/js/script.js"></script>
   </body>
 </html>
